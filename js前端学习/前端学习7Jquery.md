@@ -120,3 +120,56 @@ element.事件(function(){
 $('div').click(function(){ 事件处理程序 })
 
 其他事件基本和原生一致	如：mouseover、mouseout、blur、focus、change、keydown、keyup、resize、scroll
+
+
+
+### on()绑定事件	off()解绑事件	one()触发一次事件
+
+### 自动触发trigger()	triggerHandler()
+
+### Jquery 事件对象event
+
+event.preventDefault()或者return false阻止默认行为
+
+event.stopPropagation()阻止冒泡
+
+### Jquery对象的拷贝方法	jquery多库共存的2种方法	使用Jquery插件
+
+### Jquery对象拷贝
+
+$.extend([deep], target, object1,[objectN])
+
+deep：深拷贝
+
+target：目标对象
+
+object1：要拷贝的对象
+
+### $符号冲突
+
+~~~
+<body>
+    <span></span>
+    <div></div>
+    <script>
+        $(function () {
+            function $(ele) {  
+                return document.querySelector(ele)
+            }
+            console.log($('div'))
+            jQuery.each()
+            var jquery = jQuery.noConflict()
+            console.log(jquery('span'))
+          })    
+    </script>
+</body>
+~~~
+
+
+
+### jQuery插件网站
+
+1.jQuery插件库	http://www.jq22.com/
+
+2.jQuery之家		http://www.htmleaf.com/
+
