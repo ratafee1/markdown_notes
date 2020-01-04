@@ -345,3 +345,4 @@ fsimage 内容包含了 NameNode 管理下的所有 DataNode 文件及文件 blo
 2，修改最近一次的commit 信息
 
 　　git commit --amend
+
